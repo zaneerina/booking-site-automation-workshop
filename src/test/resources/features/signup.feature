@@ -4,18 +4,18 @@ Feature: This feature is about creating a new account in the system
     Given I have opened homepage
     When I select My account menu
       And I select Sign up button
-      And I enter First name
-      And I enter Last name
-      And I enter Mobile number
-      And I enter Email address
-      And I enter Password
-      And I confirm Password
-      And I select Sign up button
-    Then user account page is openend
+      And I enter First name in the signup page
+      And I enter Last name in the signup page
+      And I enter Mobile number in the signup page
+      And I enter Email address in the signup page
+      And I enter Password in the signup page
+      And I confirm Password in the signup page
+      And I select Sign up button in the signup page
+    Then user account page is opened 
 
   Scenario: Unsuccessful sign-up
     Given I have opened homepage
     When I select My account menu
-    And I select Sign up button
-    And I select Sign up button
-    Then user account page is openend
+      And I select Sign up button
+      And I select Sign up button in the signup page
+    Then user account page is opened 
