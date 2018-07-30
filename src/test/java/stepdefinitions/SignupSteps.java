@@ -47,6 +47,11 @@ public class SignupSteps {
         signup.enterConfirmationPassword(user.getPassword());
     }
 
+    @And("^I select Signup button in Signup page$")
+    public void iSelectSignUpButtonInSignUpPage() throws Throwable {
+        signup.selectSignUpButton();
+    }
+
     @And("^I create new account$")
     public void iCreateNewAccount() throws Throwable {
         iEnterFirstNameInTheSignupPage();
@@ -55,7 +60,7 @@ public class SignupSteps {
         iEnterEmailAddressInTheSignupPage();
         iEnterPasswordInTheSignupPage();
         iConfirmPasswordInTheSignupPage();
-
+        iSelectSignUpButtonInSignUpPage();
     }
 
 

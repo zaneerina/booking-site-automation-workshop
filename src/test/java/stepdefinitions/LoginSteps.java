@@ -2,32 +2,39 @@ package stepdefinitions;
 
 import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Given;
+import general.User;
+import pages.login.LogInPageObject;
+import pages.signup.SignUpPageObject;
 
 public class LoginSteps {
-    @And("^I select Login button$")
-    public void iSelectLoginButton() throws Throwable {
-         System.out.println("SELECT LOGIN BUTTON");
-        //selectSignUpButton();
-    }
+
+    private LogInPageObject login = new LogInPageObject();
+    private User user = new User();
+
 
 
     @And("^I enter Email address in login form$")
     public void iEnterEmailAddressInLoginForm() throws Throwable {
-         System.out.println("ENTER EMAIL");
-        //enterEmailAddressInLoginForm();
+        login.enterEmail(user.getEmailAddress());
     }
 
     @And("^I enter Password in login form$")
     public void iEnterPasswordInLoginForm() throws Throwable {
-         System.out.println("ENTER PASSWORD");
-        //enterPasswordInLoginForm();
+         login.enterPassword(user.getPassword());
     }
 
-    @And("^I select Sign up button in login form$")
-    public void iSelectSignUpButtonInLoginForm() throws Throwable {
-
-         System.out.println("SELECT SIGNUP BUTTON IN LOGIN");
-       // selectSignUpButtonInLoginForm();
-
+    @And("^I select Login button in Login form$")
+    public void iSelectLoginButtonInLoginForm() throws Throwable {
+        login.selectLogInButton();
     }
+
+    @And("^I login into account$")
+    public void iLoginIntoAccount() throws Throwable {
+        iEnterEmailAddressInLoginForm();
+        iEnterPasswordInLoginForm();
+        iSelectLoginButtonInLoginForm();
+    }
+
+
 }

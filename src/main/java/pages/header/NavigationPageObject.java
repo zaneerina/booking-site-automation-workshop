@@ -1,6 +1,9 @@
 package pages.header;
 
 import com.codeborne.selenide.SelenideElement;
+import org.openqa.selenium.By;
+import pages.login.LogInPageObject;
+
 import pages.signup.SignUpPageObject;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -20,19 +23,37 @@ public class NavigationPageObject {
 
         return $("test");
     }
-    // public metodei var pieklut jebkurs; void neatgriez neko; click atradiis elementu un uzklikos:
 
-    public void selectMyAccountButton() {
-
-    getMyAccountButton().click();
-
+    private SelenideElement getLogOutButton(){     //nodefinee logout pogu navigation logaa
+        return $("test");
     }
 
-    //bez void jaanoraada, ko atgriezt
+    private SelenideElement getLogInButton() {     //nodefinee login pogu navigation logaa
+        return $("test");
+    }
 
+    // public metodei var pieklut jebkurs; void neatgriez neko; click atradiis elementu un uzklikos
+
+    public void selectMyAccountButton() {
+    getMyAccountButton().click();
+    }
+
+
+    //bez void jaanoraada, ko atgriezt
     public SignUpPageObject selectSignUpButton(){
         getSignUpButton().click();
         return page(SignUpPageObject.class); //izpildot šo, tiks atgriezts SignUpPageObject clases objekts
-
     }
+
+    public LogInPageObject selectLogInButton() {    //publiska metode, kura atgriezh login lapu (uzklikojot login pogu)
+        getLogInButton().click();
+        return page(LogInPageObject.class);
+    }
+
+    public LogInPageObject selectLogOutButton() {     // publiska metode, kura atgriezh login lapu (uzklik logout)
+        getLogOutButton().click();
+        return page (LogInPageObject.class);
+    }
+
+
 }
