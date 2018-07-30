@@ -25,9 +25,19 @@ public class HomepageSteps {
         homepage.selectSignUpButton();
     }
 
+    @And("^I select Login button$")
+    public void iSelectLoginButton() throws Throwable {
+        homepage.selectLogInButton();
+    }
+
     @And("^I Navigate to Signup page$")
     public void iNavigateToSignUpPage() throws Throwable {
         iSelectMyAccountMenu();
         iSelectSignUpButton();
     }
+
+    @And("^I Navigate to Login page$")
+    public void iNavigateToLoginPage() throws Throwable {
+        iSelectMyAccountMenu();
+        iSelectLoginButton();
 }
