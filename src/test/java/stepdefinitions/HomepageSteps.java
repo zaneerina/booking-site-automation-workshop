@@ -40,4 +40,6 @@ public class HomepageSteps {
     public void iNavigateToLoginPage() throws Throwable {
         iSelectMyAccountMenu();
         iSelectLoginButton();
+    }
+
 }
