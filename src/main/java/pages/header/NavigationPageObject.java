@@ -2,9 +2,12 @@ package pages.header;
 
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
+import pages.account.AccountPageObject;
 import pages.login.LogInPageObject;
 
 import pages.signup.SignUpPageObject;
+
+import javax.security.auth.login.AccountException;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.page;
@@ -15,27 +18,37 @@ public class NavigationPageObject {
     //nodefineet piekluvi elementam, kur objekti bus privati, tips SelenideElement (selenide atribuuts)
     //pirmaa metode:  private SelenideElement myAccountButton = $("test");
     //otraa metode; dinamiskaakai piekluvei:
+
     private SelenideElement getMyAccountButton() {
 
-        return $("test");
+        return $(By.xpath("//nav/descendant::li[@id='li_myaccount']/a"));
     }
     private SelenideElement getSignUpButton() {
 
-        return $("test");
-    }
-
-    private SelenideElement getLogOutButton(){     //nodefinee logout pogu navigation logaa
-        return $("test");
+        return $(By.xpath("//nav/descendant::a[contains(text(), 'Sign Up')]"));
     }
 
     private SelenideElement getLogInButton() {     //nodefinee login pogu navigation logaa
-        return $("test");
+
+        return $(By.xpath("//nav/descendant::a[contains(text(), 'Login')]"));
+
     }
+    private SelenideElement getLogOutButton(){     //nodefinee logout pogu navigation logaa
+
+        return $(By.xpath("//nav/descendant::a[contains(text(), 'Logout')]"));
+    }
+
+    private SelenideElement getUserAccountButton(String username){
+        return $(By.xpath("//nav/descendant::a[contains(text(), '" + username + "')]"));
+        // tiek mekleets elements username vārds (kurš padots caur user object), un pēc tā meklēts elementu
+    }
+
 
     // public metodei var pieklut jebkurs; void neatgriez neko; click atradiis elementu un uzklikos
 
     public void selectMyAccountButton() {
-    getMyAccountButton().click();
+
+        getMyAccountButton().click();
     }
 
 
@@ -55,5 +68,9 @@ public class NavigationPageObject {
         return page (LogInPageObject.class);
     }
 
+    public AccountPageObject selectUserAccountButton(String username){
+        getUserAccountButton(username).click();
+        return page(AccountPageObject.class);
 
+    }
 }
