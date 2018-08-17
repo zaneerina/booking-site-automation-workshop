@@ -1,65 +1,64 @@
 package stepdefinitions;
 
-import cucumber.api.PendingException;
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
-import general.User;
-import pages.signup.SignUpPageObject;
 
-import static utils.RandomGenerator.*;
-import static utils.RandomGenerator.generateRandomString;
+import cucumber.api.java.en.And;
+import general.TestContext;
 
 public class SignupSteps {
 
-   private SignUpPageObject signup = new SignUpPageObject();
-   private User user = new User();
-   private User userTwo = new User ("Janis", "Berzins");
+    private TestContext test; //jauns mainigais test ar tipu TestContext
 
-    @And("^I enter First name in the signup page$")
-    public void iEnterFirstNameInTheSignupPage() throws Throwable {
-       signup.enterFirstName(user.getFirstName());
+    public SignupSteps(TestContext testContext){ //konstruktors, kuram padots parametrs(visi TestContext klases objekti))
+        this.test = testContext;
     }
 
-    @And("^I enter Last name in the signup page$")
-    public void iEnterLastNameInTheSignupPage() throws Throwable {
-       signup.enterLastName(user.getLastName());
+
+    @And("^I enter First name$")
+    public void iEnterFirstName()  {
+       test.getSignUpPage().enterFirstName(test.getUser().getFirstName());
     }
 
-    @And("^I enter Mobile number in the signup page$")
-    public void iEnterMobileNumberInTheSignupPage() throws Throwable {
-       signup.enterMobileNumber(user.getMobileNumber());
-    }
-
-    @And("^I enter Email address in the signup page$")
-    public void iEnterEmailAddressInTheSignupPage() throws Throwable {
-      signup.enterEmail(user.getEmailAddress());
+    @And("^I enter Last name$")
+    public void iEnterLastName()  {
+       // signup.enterLastName(user.getLastName());
+        // --> lai tiktu pie signup: test.getSignUpPage; lai tiktu pie user datiem: test.getUser();
+      test.getSignUpPage().enterLastName(test.getUser().getLastName());
 
     }
 
-    @And("^I enter Password in the signup page$")
-    public void iEnterPasswordInTheSignupPage() throws Throwable {
-       signup.enterPassword(user.getPassword());
+    @And("^I enter Mobile number$")
+    public void iEnterMobileNumber()  {
+       test.getSignUpPage().enterMobileNumber(test.getUser().getMobileNumber());
     }
-    @And("^I confirm Password in the signup page$")
-    public void iConfirmPasswordInTheSignupPage() throws Throwable {
-        signup.enterConfirmationPassword(user.getPassword());
+
+    @And("^I enter Email address$")
+    public void iEnterEmailAddress()  {
+      test.getSignUpPage().enterEmail(test.getUser().getEmailAddress());
+
+    }
+
+    @And("^I enter Password$")
+    public void iEnterPassword()  {
+       test.getSignUpPage().enterPassword(test.getUser().getPassword());
+    }
+    @And("^I confirm Password$")
+    public void iConfirmPassword()  {
+        test.getSignUpPage().enterConfirmationPassword(test.getUser().getPassword());
     }
 
     @And("^I select Signup button in Signup page$")
-    public void iSelectSignUpButtonInSignUpPage() throws Throwable {
-        signup.selectSignUpButton();
+    public void iSelectSignUpButtonInSignUpPage()  {
+        test.getSignUpPage().selectSignUpButton();
     }
 
     @And("^I create new account$")
-    public void iCreateNewAccount() throws Throwable {
-        iEnterFirstNameInTheSignupPage();
-        iEnterLastNameInTheSignupPage();
-        iEnterMobileNumberInTheSignupPage();
-        iEnterEmailAddressInTheSignupPage();
-        iEnterPasswordInTheSignupPage();
-        iConfirmPasswordInTheSignupPage();
+    public void iCreateNewAccount()  {
+        iEnterFirstName();
+        iEnterLastName();
+        iEnterMobileNumber();
+        iEnterEmailAddress();
+        iEnterPassword();
+        iConfirmPassword();
         iSelectSignUpButtonInSignUpPage();
     }
 

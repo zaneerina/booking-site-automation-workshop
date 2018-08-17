@@ -10,17 +10,14 @@ public class LogInPageObject {
 
 
     private SelenideElement getEmailField() { //nodefineets epasta lodzinsh
-        return $("test");
+        return $("input[name='username']");
     }
 
     private SelenideElement getPasswordField() { //nodefineets paroles lodzinsh
-        return $("test");
+        return $("input[name='password']");
     }
 
-    private SelenideElement getLogInButton() {
-        return $("test");
-
-    }
+    private SelenideElement getLogInButton() { return $(".btn-lg"); }
 
     public void enterEmail(String email){
         getEmailField().sendKeys(email);

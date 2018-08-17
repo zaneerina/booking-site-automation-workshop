@@ -1,36 +1,35 @@
 package stepdefinitions;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import general.User;
-import pages.login.LogInPageObject;
-import pages.signup.SignUpPageObject;
+import general.TestContext;
 
 public class LoginSteps {
 
-    private LogInPageObject login = new LogInPageObject();
-    private User user = new User();
-
+    private TestContext test;
+    public LoginSteps(TestContext testContext){
+        this.test = testContext;
+    }
 
 
     @And("^I enter Email address in login form$")
-    public void iEnterEmailAddressInLoginForm() throws Throwable {
-        login.enterEmail(user.getEmailAddress());
+    public void iEnterEmailAddressInLoginForm()  {
+        // login.enterEmail(user.getEmailAddress());
+        // --> login: test.getLoginPage; user: test.getUser();
+        test.getLoginPage().enterEmail(test.getUser().getEmailAddress());
     }
 
     @And("^I enter Password in login form$")
-    public void iEnterPasswordInLoginForm() throws Throwable {
-         login.enterPassword(user.getPassword());
+    public void iEnterPasswordInLoginForm()  {
+         test.getLoginPage().enterPassword(test.getUser().getPassword());
     }
 
     @And("^I select Login button in Login form$")
-    public void iSelectLoginButtonInLoginForm() throws Throwable {
-        login.selectLogInButton();
+    public void iSelectLoginButtonInLoginForm()  {
+        test.getLoginPage().selectLogInButton();
     }
 
     @And("^I login into account$")
-    public void iLoginIntoAccount() throws Throwable {
+    public void iLoginIntoAccount()  {
         iEnterEmailAddressInLoginForm();
         iEnterPasswordInLoginForm();
         iSelectLoginButtonInLoginForm();
