@@ -3,6 +3,7 @@ package pages.header;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.account.AccountPageObject;
+import pages.ladingpage.HomepagePageObject;
 import pages.login.LogInPageObject;
 
 import pages.signup.SignUpPageObject;
@@ -43,6 +44,10 @@ public class NavigationPageObject {
         // tiek mekleets elements username vārds (kurš padots caur user object), un pēc tā meklēts elementu
     }
 
+    private SelenideElement getHomeButton() {
+        return $(By.xpath("//nav/descendant::a[contains(text(), 'Home')]"));
+    }
+
 
     // public metodei var pieklut jebkurs; void neatgriez neko; click atradiis elementu un uzklikos
 
@@ -73,4 +78,11 @@ public class NavigationPageObject {
         return page(AccountPageObject.class);
 
     }
+
+    public HomepagePageObject selectHomeButton() {
+
+        getHomeButton().click();
+        return page(HomepagePageObject.class);
+    }
+
 }
