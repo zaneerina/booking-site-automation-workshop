@@ -1,5 +1,6 @@
 package stepdefinitions;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;
@@ -52,4 +53,9 @@ public class HomepageSteps {
     }
 
 
+    @When("^I select Home button in Navigation bar$")
+    public void iSelectHomeButtonInNavigationBar() throws InterruptedException {
+        Thread.sleep(6000);
+        test.getNavigationPage().selectHomeButton();
+    }
 }
