@@ -16,7 +16,7 @@ public class AccountSteps {
     @And("^I logout$")
     public void iLogOut()  {
         //navigate.selectLogOutButton(); --> navigate: test.getNavigation();
-        test.getNavigation().selectLogOutButton();
+        test.getNavigationPage().selectLogOutButton();
     }
 
 
@@ -27,6 +27,6 @@ public class AccountSteps {
 
     @And("^I select User Account button$")
     public void iSelectUserAccountButton() {
-        test.getNavigation().selectUserAccountButton(test.getUser().getFirstName());
+        test.getNavigationPage().selectUserAccountButton(test.getUser().getFirstName());
     }
 }

@@ -12,7 +12,7 @@ public class TestContext {
 
     private User user;
     private AccountPageObject accountPage;
-    private NavigationPageObject navigation;
+    private NavigationPageObject navigationPage;
     private BookHotelsPageObject bookHotelsPage;
     private LogInPageObject loginPage;
     private SignUpPageObject signUpPage;
@@ -20,7 +20,7 @@ public class TestContext {
     public TestContext(){ //konstruktors, kas uztaisīs jaunus objektus; nosaukums tāds pats, kā klasei
         this.user = new User(); //atmiņā tiek rezervēta vieta šim object
         this.accountPage = new AccountPageObject();
-        this. navigation = new NavigationPageObject();
+        this. navigationPage = new NavigationPageObject();
         this.bookHotelsPage = new BookHotelsPageObject();
         this.loginPage = new LogInPageObject();
         this.signUpPage = new SignUpPageObject();

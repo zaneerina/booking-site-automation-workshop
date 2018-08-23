@@ -26,17 +26,17 @@ public class HomepageSteps {
     public void iSelectMyAccountMenu()  {
      //   navigation.selectMyAccountButton(); -->
      //           --> navigation: test.getNavigation();
-        test.getNavigation().selectMyAccountButton();
+        test.getNavigationPage().selectMyAccountButton();
     }
 
     @And("^I select Sign up button in Home page$")
     public void iSelectSignUpButton()  {
-        test.getNavigation().selectSignUpButton();
+        test.getNavigationPage().selectSignUpButton();
     }
 
     @And("^I select Login button$")
     public void iSelectLoginButton()  {
-        test.getNavigation().selectLogInButton();
+        test.getNavigationPage().selectLogInButton();
     }
 
     @And("^I Navigate to Signup page$")
