@@ -7,6 +7,8 @@ import cucumber.api.java.en.When;
 import general.TestContext;
 import pages.header.NavigationPageObject;
 
+import static org.assertj.core.api.Java6Assertions.assertThat;
+
 public class HomepageSteps {
 
     private TestContext test; //tiek izveidots privāts TestContext tipa objekts test - pieejams tikai šajā klasē
@@ -20,7 +22,11 @@ public class HomepageSteps {
 
     @Given("^I have opened homepage$")
     public void iHaveOpenedHomepage()  {
-        System.out.println("Navigation is visible"); //sheit buss assert, lai paarbaudiitu, vai homepage ir atveerta
+
+        test.getNavigationPage().waitUntilPageLoadingIsFinished();
+
+        assertThat(test.getNavigationPage().isLogoVisible()).isTrue();
+        assertThat(test.getNavigationPage().isMyAccountButtonVisible()).isTrue();
     }
 
     @When("^I select My account menu$")
@@ -30,7 +36,7 @@ public class HomepageSteps {
         test.getNavigationPage().selectMyAccountButton();
     }
 
-    @And("^I select Sign up button in Home page$")
+    @And("^I select Sign up button in Navigation bar$")
     public void iSelectSignUpButton()  {
         test.getNavigationPage().selectSignUpButton();
     }

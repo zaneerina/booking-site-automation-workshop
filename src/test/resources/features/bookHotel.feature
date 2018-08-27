@@ -2,7 +2,7 @@
 # Tags: optional
 
 Feature: A description
-@TEST
+#@TEST
   Scenario: A scenario
     Given I have opened homepage
       And I Navigate to Signup page

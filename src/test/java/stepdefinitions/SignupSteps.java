@@ -2,7 +2,10 @@ package stepdefinitions;
 
 
 import cucumber.api.java.en.And;
+import cucumber.api.java.en.Then;
 import general.TestContext;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class SignupSteps {
 
@@ -63,5 +66,23 @@ public class SignupSteps {
     }
 
 
+    @And("^Signup page is open$")
+    public void signupPageIsOpen() {
+        test.getNavigationPage().waitUntilPageLoadingIsFinished();
 
+        assertThat(test.getSignUpPage().getFormTitleText()).isEqualTo("SIGN UP");
+        assertThat(test.getSignUpPage().isSignUpButtonVisible()).isTrue();
+    }
+
+    @Then("^error messages are displayed$")
+    public void errorMessagesAreDisplayed() {
+
+        test.getSignUpPage().waitUntilErrorMessagesAreDisplayed();
+        // bez shiis metodes asserti feilo, jo elementi veel nav displayed
+        assertThat(test.getSignUpPage().getErrorMessagesCount()).isEqualTo(5);
+        assertThat(test.getSignUpPage()
+                .getAllErrorMessages().toString()).contains("The First name field is required.");
+
+
+    }
 }

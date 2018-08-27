@@ -2,15 +2,19 @@
 # Tags: optional
 
 Feature: This feature is about logging into the user account
-
+@TEST
   Scenario: Successful login
     Given: I have opened homepage
-      And I Navigate to Signup page
+      And I select My account menu
+      And I select Sign up button in Navigation bar
+      And Signup page is open
       And I create new account
+      And user account page is opened 
       And I select User Account button
       And I logout
     When I select My account menu
       And I select Login button
+      And Login page is opened
       And I enter Email address in login form
       And I enter Password in login form
       And I select Login button in Login form
