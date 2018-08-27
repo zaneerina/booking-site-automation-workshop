@@ -1,5 +1,6 @@
 package pages.login;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import pages.account.AccountPageObject;
 
@@ -19,6 +20,10 @@ public class LogInPageObject {
 
     private SelenideElement getLogInButton() { return $(".btn-lg"); }
 
+    private SelenideElement getLoginFormTitle(){
+        return $(".panel-heading");
+    }
+
     public void enterEmail(String email){
         getEmailField().sendKeys(email);
     }
@@ -31,5 +36,19 @@ public class LogInPageObject {
         getLogInButton().click();
         return page(AccountPageObject.class);
     }
+
+    public String getLoginFormTitleText(){
+        return getLoginFormTitle().getText();
+    }
+
+    public boolean isLoginButtonVisible() {
+        return getLogInButton().isDisplayed();
+    }
+
+    public void waitUntilLoginFormIsLoaded() {
+
+        getLogInButton().waitUntil(Condition.visible, 5000);
+    }
+
 
 }

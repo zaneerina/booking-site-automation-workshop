@@ -4,6 +4,8 @@ import cucumber.api.java.en.And;
 import cucumber.api.java.en.Then;
 import general.TestContext;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 
 public class AccountSteps {
 
@@ -22,7 +24,11 @@ public class AccountSteps {
 
     @Then("^user account page is opened $")
     public void userAccountPageIsOpened()  {
-        System.out.println("ACCOUNT CREATED");
+
+        test.getNavigationPage().waitUntilPageLoadingIsFinished();
+
+        assertThat(test.getAccountPage().getAccountName()).isEqualTo(test.getUser().getFirstName());
+        assertThat(test.getAccountPage().getAccountLastName()).isEqualTo(test.getUser().getLastName());
     }
 
     @And("^I select User Account button$")

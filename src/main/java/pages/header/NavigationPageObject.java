@@ -1,5 +1,6 @@
 package pages.header;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;
 import pages.account.AccountPageObject;
@@ -48,6 +49,15 @@ public class NavigationPageObject {
         return $(By.xpath("//nav/descendant::a[contains(text(), 'Home')]"));
     }
 
+    private SelenideElement getLogoImageLocation(){
+        return $(".navbar-brand img");
+    }
+
+    private SelenideElement getLoadingIndicator() {
+
+        return $(By.id ("preloader"));
+    }
+
 
     // public metodei var pieklut jebkurs; void neatgriez neko; click atradiis elementu un uzklikos
 
@@ -83,6 +93,18 @@ public class NavigationPageObject {
 
         getHomeButton().click();
         return page(HomepagePageObject.class);
+    }
+
+    public boolean isLogoVisible() { //metode, kura meklēs logo; un, ja logo bus redzams, tad atgriezīs true
+        return getLogoImageLocation().isDisplayed();
+    }
+
+    public boolean isMyAccountButtonVisible() {
+        return getMyAccountButton().isDisplayed();
+    }
+
+    public void waitUntilPageLoadingIsFinished() {
+        getLoadingIndicator().waitUntil(Condition.attribute("style", "display: none;"), 5000 );
     }
 
 }

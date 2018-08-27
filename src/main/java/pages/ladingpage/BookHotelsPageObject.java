@@ -42,6 +42,8 @@ public class BookHotelsPageObject {
 
 
 
+
+
     public void enterHotelName(String hotel){
         getEnterHotelNameButton().sendKeys(hotel);
     }
