@@ -1,7 +1,7 @@
 Feature: This feature is about creating a new account in the system
 # @TEST
   Scenario: Successful sign-up
-    Given I have opened homepage
+    Given Landing page is opened
     When I select My account menu
       And I select Sign up button in Navigation bar
       And Signup page is open
@@ -16,7 +16,7 @@ Feature: This feature is about creating a new account in the system
 
 
   Scenario: Unsuccessful sign-up
-    Given I have opened homepage
+    Given Landing page is opened
     When I select My account menu
       And I select Sign up button in Navigation bar
       And Signup page is open

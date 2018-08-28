@@ -52,6 +52,12 @@ public class BookHotelsPageObject {
         getSingaporeHotelButton().click();
     }
 
+    public String getTheCityName(){
+
+        return getSingaporeHotelButton().getText().split(" ")[3];
+    }
+
+
     public void enterCheckInDate(String checkInDate){
         getCheckInButton().sendKeys(checkInDate);
     }

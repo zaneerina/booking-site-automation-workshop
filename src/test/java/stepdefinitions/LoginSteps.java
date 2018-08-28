@@ -44,7 +44,6 @@ public class LoginSteps {
 
         test.getNavigationPage().waitUntilPageLoadingIsFinished();
 
-
         assertThat(test.getLoginPage().getLoginFormTitleText()).isEqualTo("LOGIN");
         assertThat(test.getLoginPage().isLoginButtonVisible()).isTrue();
     }

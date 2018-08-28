@@ -24,6 +24,7 @@ public class TestContext {
     private HotelDetailsPageObject hotelDetailPage;
     private InvoicePageObject invoicePage;
     private ReservationPageObject reservationPage;
+    private Booking booking;
 
     public TestContext(){ //konstruktors, kas uztaisīs jaunus objektus; nosaukums tāds pats, kā klasei
         this.user = new User(); //atmiņā tiek rezervēta vieta šim object
@@ -36,6 +37,7 @@ public class TestContext {
         this.hotelDetailPage = new HotelDetailsPageObject();
         this.invoicePage = new InvoicePageObject();
         this.reservationPage = new ReservationPageObject();
+        this.booking = new Booking();
 
     }
 

@@ -2,9 +2,9 @@
 # Tags: optional
 
 Feature: This feature is about logging into the user account
-@TEST
+
   Scenario: Successful login
-    Given: I have opened homepage
+    Given: Landing page is opened
       And I select My account menu
       And I select Sign up button in Navigation bar
       And Signup page is open
