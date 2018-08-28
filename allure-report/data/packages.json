@@ -1,0 +1,21 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "A description",
+    "children" : [ {
+      "name" : "A scenario",
+      "uid" : "8e2f29a8accd2c86",
+      "parentUid" : "002e9cafadf498a5d2a6f51feba55531",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535467691759,
+        "stop" : 1535467736309,
+        "duration" : 44550
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "002e9cafadf498a5d2a6f51feba55531"
+  } ]
+}

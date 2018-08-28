@@ -1,0 +1,11 @@
+[ {
+  "uid" : "8e2f29a8accd2c86",
+  "name" : "A scenario",
+  "time" : {
+    "start" : 1535467691759,
+    "stop" : 1535467736309,
+    "duration" : 44550
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

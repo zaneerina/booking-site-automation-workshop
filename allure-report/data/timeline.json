@@ -1,0 +1,25 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Zanes-MacBook-Pro.local",
+    "children" : [ {
+      "name" : "68173@Zanes-MacBook-Pro.local.main(1)",
+      "children" : [ {
+        "name" : "A scenario",
+        "uid" : "8e2f29a8accd2c86",
+        "parentUid" : "c3753ec785941f7d50630f5729c76edc",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535467691759,
+          "stop" : 1535467736309,
+          "duration" : 44550
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "c3753ec785941f7d50630f5729c76edc"
+    } ],
+    "uid" : "3c2a7c1fc7d8dde1b149cdd00714b3da"
+  } ]
+}

@@ -1,0 +1,25 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "A description",
+    "children" : [ {
+      "name" : "A scenario",
+      "children" : [ {
+        "name" : "A scenario",
+        "uid" : "8e2f29a8accd2c86",
+        "parentUid" : "18d74678eb25ce59abe50b100d4a94a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535467691759,
+          "stop" : 1535467736309,
+          "duration" : 44550
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "18d74678eb25ce59abe50b100d4a94a4"
+    } ],
+    "uid" : "2a5be51859d2cbf35b662872d2b12a24"
+  } ]
+}

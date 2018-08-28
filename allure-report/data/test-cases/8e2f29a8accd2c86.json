@@ -1,0 +1,439 @@
+{
+  "uid" : "8e2f29a8accd2c86",
+  "name" : "A scenario",
+  "historyId" : "ff5cbdff12091e13680dfd99a04daf4c",
+  "time" : {
+    "start" : 1535467691759,
+    "stop" : 1535467736309,
+    "duration" : 44550
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "before",
+      "time" : {
+        "start" : 1535467691769,
+        "stop" : 1535467691784,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "before",
+      "time" : {
+        "start" : 1535467691785,
+        "stop" : 1535467706163,
+        "duration" : 14378
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Given  Landing page is opened",
+      "time" : {
+        "start" : 1535467706164,
+        "stop" : 1535467707432,
+        "duration" : 1268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I Navigate to Signup page",
+      "time" : {
+        "start" : 1535467707433,
+        "stop" : 1535467708606,
+        "duration" : 1173
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Signup page is open",
+      "time" : {
+        "start" : 1535467708606,
+        "stop" : 1535467709646,
+        "duration" : 1040
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I create new account",
+      "time" : {
+        "start" : 1535467709646,
+        "stop" : 1535467710333,
+        "duration" : 687
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  user account page is opened ",
+      "time" : {
+        "start" : 1535467710334,
+        "stop" : 1535467713468,
+        "duration" : 3134
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "When  I select Home button in Navigation bar",
+      "time" : {
+        "start" : 1535467713468,
+        "stop" : 1535467721426,
+        "duration" : 7958
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Landing page is opened",
+      "time" : {
+        "start" : 1535467721427,
+        "stop" : 1535467722525,
+        "duration" : 1098
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select book Hotels button",
+      "time" : {
+        "start" : 1535467722525,
+        "stop" : 1535467722633,
+        "duration" : 108
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I enter Rendezvous Hotels hotel",
+      "time" : {
+        "start" : 1535467722633,
+        "stop" : 1535467722925,
+        "duration" : 292
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  The correct amount of hotels is found",
+      "time" : {
+        "start" : 1535467722925,
+        "stop" : 1535467724717,
+        "duration" : 1792
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select hotel located in Singapore",
+      "time" : {
+        "start" : 1535467724717,
+        "stop" : 1535467724817,
+        "duration" : 100
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select 01/09/2018 checkInDate",
+      "time" : {
+        "start" : 1535467724818,
+        "stop" : 1535467725028,
+        "duration" : 210
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select 09/09/2018 as Check out date",
+      "time" : {
+        "start" : 1535467725028,
+        "stop" : 1535467725229,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select 2 Adult and 2 Children",
+      "time" : {
+        "start" : 1535467725229,
+        "stop" : 1535467725565,
+        "duration" : 336
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select Search button",
+      "time" : {
+        "start" : 1535467725565,
+        "stop" : 1535467727427,
+        "duration" : 1862
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Hotel details page is opened",
+      "time" : {
+        "start" : 1535467727427,
+        "stop" : 1535467728578,
+        "duration" : 1151
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Hotel details are correct",
+      "time" : {
+        "start" : 1535467728578,
+        "stop" : 1535467728978,
+        "duration" : 400
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select Junior Suites room",
+      "time" : {
+        "start" : 1535467728978,
+        "stop" : 1535467730096,
+        "duration" : 1118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  Booking confirmation page is opened",
+      "time" : {
+        "start" : 1535467730096,
+        "stop" : 1535467730127,
+        "duration" : 31
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  personal data is correct",
+      "time" : {
+        "start" : 1535467730127,
+        "stop" : 1535467730187,
+        "duration" : 60
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "And  I select “Confirm this booking” button",
+      "time" : {
+        "start" : 1535467730187,
+        "stop" : 1535467730283,
+        "duration" : 96
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Then  Unpaid invoice page is opened",
+      "time" : {
+        "start" : 1535467730283,
+        "stop" : 1535467736142,
+        "duration" : 5859
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "after",
+      "time" : {
+        "start" : 1535467736142,
+        "stop" : 1535467736306,
+        "duration" : 164
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 25,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "A description"
+  }, {
+    "name" : "story",
+    "value" : "A scenario"
+  }, {
+    "name" : "tag",
+    "value" : "TEST"
+  }, {
+    "name" : "host",
+    "value" : "Zanes-MacBook-Pro.local"
+  }, {
+    "name" : "package",
+    "value" : "A description"
+  }, {
+    "name" : "suite",
+    "value" : "A description"
+  }, {
+    "name" : "testClass",
+    "value" : "A scenario"
+  }, {
+    "name" : "thread",
+    "value" : "68173@Zanes-MacBook-Pro.local.main(1)"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "TEST" ]
+  },
+  "source" : "8e2f29a8accd2c86.json",
+  "parameterValues" : [ ]
+}
