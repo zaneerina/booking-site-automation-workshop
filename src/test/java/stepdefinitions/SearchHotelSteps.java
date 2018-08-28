@@ -8,41 +8,38 @@ import io.netty.handler.codec.socks.SocksAddressType;
 
 import javax.xml.soap.SOAPPart;
 
-public class SearchSteps {
+import static org.assertj.core.api.Assertions.assertThat;
+
+public class SearchHotelSteps {
 
     private TestContext test;
-    public SearchSteps (TestContext testContext){
+    public SearchHotelSteps(TestContext testContext){
         this.test = testContext;
-    }
-
-    @And("^I select book Hotels button$")
-    public void iSelectBookHotelsButton()  {
-        test.getHomepagePage().selectHotelsButton();
     }
 
 
     @And("^I enter ([^\"]*) hotel")
     public void iEnterHotelName(String hotel) throws InterruptedException {
-        Thread.sleep(1000);
+
         test.getBookHotelsPage().enterHotelName(hotel);
     }
 
     @And("^I select hotel located in Singapore$")
-    public void iSelectHotelLocatedInSingapore() throws Throwable {
+    public void iSelectHotelLocatedInSingapore()  {
         test.getBookHotelsPage().selectSingaporeHotel();
     }
 
 
     @And("^I select ([^\"]*) checkInDate")
     public void iSelectAsCheckInDate(String checkInDate) throws InterruptedException {
-        Thread.sleep(3000);
+
        test.getBookHotelsPage().enterCheckInDate(checkInDate);
 
     }
 
     @And("^I select ([^\"]*) as Check out date$")
     public void iSelectAsCheckOutDate(String checkOutDate) throws InterruptedException {
-        Thread.sleep(6000);
+
         test.getBookHotelsPage().enterCheckOutDate(checkOutDate);
 
     }
@@ -52,7 +49,7 @@ public class SearchSteps {
     public void iSelectAdultAndChildren(String Children) throws InterruptedException {
         test.getBookHotelsPage().setAmountOfTravellers();
         test.getBookHotelsPage().enterAmountOfChildren(Children);
-        Thread.sleep(5000);
+
     }
 
     @And("^I select Search button$")
@@ -60,21 +57,12 @@ public class SearchSteps {
     test.getBookHotelsPage().selectSearchHotelButton();
     }
 
-    @And("^I select Junior Suites room$")
-    public void iSelectJuniorSuitesRoom() {
-        test.getHotelDetailPage().locateRoomsSection();
-        test.getHotelDetailPage().tapOnBookNowJunior();
 
-    }
+    @And("^The correct amount of hotels is found$")
+    public void theCorrectAmountOfHotelsIsFound()  {
 
-    @And("^I select “Confirm this booking” button$")
-    public void iSelectConfirmThisBookingButton() throws InterruptedException {
-        Thread.sleep(2000);
-        test.getReservationPage().selectConfirmThisBookingButton();
-    }
 
-    @Then("^Unpaid invoice page is opened$")
-    public void unpaidInvoicePageIsOpened()  {
-        System.out.print("INVOICE IS SENT TO YOUR MAIL. PLEASE FOLLOW THE INSTRUCTIONS.");
+     assertThat(test.getBookHotelsPage().getTheCityName()).isEqualTo("Singapore");
+
     }
 }

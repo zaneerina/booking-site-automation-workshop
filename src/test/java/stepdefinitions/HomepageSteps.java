@@ -17,51 +17,13 @@ public class HomepageSteps {
         this.test = testContext;
     }
 
-   // private NavigationPageObject navigation = new NavigationPageObject(); //uztaisiis jaunu objektu no klases NavigationPageobject
 
 
-    @Given("^I have opened homepage$")
-    public void iHaveOpenedHomepage()  {
 
-        test.getNavigationPage().waitUntilPageLoadingIsFinished();
+    @And("^I select book Hotels button$")
+    public void iSelectBookHotelsButton()  {
 
-        assertThat(test.getNavigationPage().isLogoVisible()).isTrue();
-        assertThat(test.getNavigationPage().isMyAccountButtonVisible()).isTrue();
+        test.getHomepagePage().selectHotelsButton();
     }
 
-    @When("^I select My account menu$")
-    public void iSelectMyAccountMenu()  {
-     //   navigation.selectMyAccountButton(); -->
-     //           --> navigation: test.getNavigation();
-        test.getNavigationPage().selectMyAccountButton();
-    }
-
-    @And("^I select Sign up button in Navigation bar$")
-    public void iSelectSignUpButton()  {
-        test.getNavigationPage().selectSignUpButton();
-    }
-
-    @And("^I select Login button$")
-    public void iSelectLoginButton()  {
-        test.getNavigationPage().selectLogInButton();
-    }
-
-    @And("^I Navigate to Signup page$")
-    public void iNavigateToSignUpPage()  {
-        iSelectMyAccountMenu();
-        iSelectSignUpButton();
-    }
-
-    @And("^I Navigate to Login page$")
-    public void iNavigateToLoginPage() throws Throwable {
-        iSelectMyAccountMenu();
-        iSelectLoginButton();
-    }
-
-
-    @When("^I select Home button in Navigation bar$")
-    public void iSelectHomeButtonInNavigationBar() throws InterruptedException {
-        Thread.sleep(6000);
-        test.getNavigationPage().selectHomeButton();
-    }
 }
