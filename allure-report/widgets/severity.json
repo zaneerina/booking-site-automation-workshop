@@ -1,10 +1,40 @@
 [ {
-  "uid" : "8e2f29a8accd2c86",
-  "name" : "A scenario",
+  "uid" : "eeedee6c4491d97a",
+  "name" : "Unsuccessful sign-up",
   "time" : {
-    "start" : 1535467691759,
-    "stop" : 1535467736309,
-    "duration" : 44550
+    "start" : 1535551791122,
+    "stop" : 1535551807011,
+    "duration" : 15889
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff24a87e6fcf883f",
+  "name" : "Successful login",
+  "time" : {
+    "start" : 1535551742704,
+    "stop" : 1535551766577,
+    "duration" : 23873
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e1a19acc1386e7f",
+  "name" : "Book a hotel room",
+  "time" : {
+    "start" : 1535551689080,
+    "stop" : 1535551737559,
+    "duration" : 48479
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "6abc01258c479805",
+  "name" : "Successful sign-up",
+  "time" : {
+    "start" : 1535551771602,
+    "stop" : 1535551786110,
+    "duration" : 14508
   },
   "status" : "passed",
   "severity" : "normal"

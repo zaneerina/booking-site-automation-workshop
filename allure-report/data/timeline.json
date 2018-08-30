@@ -4,21 +4,57 @@
   "children" : [ {
     "name" : "Zanes-MacBook-Pro.local",
     "children" : [ {
-      "name" : "68173@Zanes-MacBook-Pro.local.main(1)",
+      "name" : "2284@Zanes-MacBook-Pro.local.main(1)",
       "children" : [ {
-        "name" : "A scenario",
-        "uid" : "8e2f29a8accd2c86",
-        "parentUid" : "c3753ec785941f7d50630f5729c76edc",
+        "name" : "Successful login",
+        "uid" : "ff24a87e6fcf883f",
+        "parentUid" : "82a75be66eee8ef3a30ed12c45e6d5cd",
         "status" : "passed",
         "time" : {
-          "start" : 1535467691759,
-          "stop" : 1535467736309,
-          "duration" : 44550
+          "start" : 1535551742704,
+          "stop" : 1535551766577,
+          "duration" : 23873
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Successful sign-up",
+        "uid" : "6abc01258c479805",
+        "parentUid" : "82a75be66eee8ef3a30ed12c45e6d5cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535551771602,
+          "stop" : 1535551786110,
+          "duration" : 14508
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Book a hotel room",
+        "uid" : "e1a19acc1386e7f",
+        "parentUid" : "82a75be66eee8ef3a30ed12c45e6d5cd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1535551689080,
+          "stop" : 1535551737559,
+          "duration" : 48479
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Unsuccessful sign-up",
+        "uid" : "eeedee6c4491d97a",
+        "parentUid" : "82a75be66eee8ef3a30ed12c45e6d5cd",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535551791122,
+          "stop" : 1535551807011,
+          "duration" : 15889
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "c3753ec785941f7d50630f5729c76edc"
+      "uid" : "82a75be66eee8ef3a30ed12c45e6d5cd"
     } ],
     "uid" : "3c2a7c1fc7d8dde1b149cdd00714b3da"
   } ]

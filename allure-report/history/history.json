@@ -1,5 +1,5 @@
 {
-  "ff5cbdff12091e13680dfd99a04daf4c" : {
+  "638b06e0d0b388da4de09faf3a2c5b71" : {
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
@@ -9,12 +9,70 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "8e2f29a8accd2c86",
+      "uid" : "6abc01258c479805",
       "status" : "passed",
       "time" : {
-        "start" : 1535467691759,
-        "stop" : 1535467736309,
-        "duration" : 44550
+        "start" : 1535551771602,
+        "stop" : 1535551786110,
+        "duration" : 14508
+      }
+    } ]
+  },
+  "ff5cbdff12091e13680dfd99a04daf4c" : {
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "e1a19acc1386e7f",
+      "status" : "failed",
+      "statusDetails" : "Element should be attribute style=display: none; {By.xpath: //title[contains(text(), \"Invoice\")]//parent::head//following-sibling::body//descendant::div[@id=\"preloader\"]}\nElement: '<div class=\"loader-wrapper\" id=\"preloader\"></div>'",
+      "time" : {
+        "start" : 1535551689080,
+        "stop" : 1535551737559,
+        "duration" : 48479
+      }
+    } ]
+  },
+  "78f3b6709e7ba91523bc37f4785e0f7f" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "eeedee6c4491d97a",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535551791122,
+        "stop" : 1535551807011,
+        "duration" : 15889
+      }
+    } ]
+  },
+  "92742e8b731ec91f277fab987e6f6c69" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "ff24a87e6fcf883f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535551742704,
+        "stop" : 1535551766577,
+        "duration" : 23873
       }
     } ]
   }

@@ -2,20 +2,64 @@
   "uid" : "98d3104e051c652961429bf95fa0b5d6",
   "name" : "suites",
   "children" : [ {
-    "name" : "A description",
+    "name" : "This feature is about booking a hotel",
     "children" : [ {
-      "name" : "A scenario",
-      "uid" : "8e2f29a8accd2c86",
-      "parentUid" : "7b7a7e79e2933c46a1942129b7ed628b",
-      "status" : "passed",
+      "name" : "Book a hotel room",
+      "uid" : "e1a19acc1386e7f",
+      "parentUid" : "4aba9cbac12da8950c58bd50b751fd2b",
+      "status" : "failed",
       "time" : {
-        "start" : 1535467691759,
-        "stop" : 1535467736309,
-        "duration" : 44550
+        "start" : 1535551689080,
+        "stop" : 1535551737559,
+        "duration" : 48479
       },
       "flaky" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "7b7a7e79e2933c46a1942129b7ed628b"
+    "uid" : "4aba9cbac12da8950c58bd50b751fd2b"
+  }, {
+    "name" : "This feature is about logging into the user account",
+    "children" : [ {
+      "name" : "Successful login",
+      "uid" : "ff24a87e6fcf883f",
+      "parentUid" : "da30aa9bab49f502cb6fb022e2694406",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535551742704,
+        "stop" : 1535551766577,
+        "duration" : 23873
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "da30aa9bab49f502cb6fb022e2694406"
+  }, {
+    "name" : "This feature is about creating a new account in the system",
+    "children" : [ {
+      "name" : "Successful sign-up",
+      "uid" : "6abc01258c479805",
+      "parentUid" : "5cf0b578ac131bacc26177604690d73b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535551771602,
+        "stop" : 1535551786110,
+        "duration" : 14508
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Unsuccessful sign-up",
+      "uid" : "eeedee6c4491d97a",
+      "parentUid" : "5cf0b578ac131bacc26177604690d73b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1535551791122,
+        "stop" : 1535551807011,
+        "duration" : 15889
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "5cf0b578ac131bacc26177604690d73b"
   } ]
 }

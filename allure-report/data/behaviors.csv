@@ -1,2 +1,5 @@
 "Epic","Feature","Story","FAILED","BROKEN","PASSED","SKIPPED","UNKNOWN"
-"","A description","A scenario","0","0","1","0","0"
+"","This feature is about logging into the user account","Successful login","0","0","1","0","0"
+"","This feature is about creating a new account in the system","Successful sign-up","0","0","1","0","0"
+"","This feature is about booking a hotel","Book a hotel room","1","0","0","0","0"
+"","This feature is about creating a new account in the system","Unsuccessful sign-up","0","0","1","0","0"

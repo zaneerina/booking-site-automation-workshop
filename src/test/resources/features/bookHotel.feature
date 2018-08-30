@@ -1,9 +1,9 @@
 # new feature
 # Tags: optional
 
-Feature: A description
+Feature: This feature is about booking a hotel
 @TEST
-  Scenario: A scenario
+  Scenario: Book a hotel room
     Given Landing page is opened
       And I Navigate to Signup page
       And Signup page is open

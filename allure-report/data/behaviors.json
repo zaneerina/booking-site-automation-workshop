@@ -2,24 +2,80 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "name" : "behaviors",
   "children" : [ {
-    "name" : "A description",
+    "name" : "This feature is about booking a hotel",
     "children" : [ {
-      "name" : "A scenario",
+      "name" : "Book a hotel room",
       "children" : [ {
-        "name" : "A scenario",
-        "uid" : "8e2f29a8accd2c86",
-        "parentUid" : "18d74678eb25ce59abe50b100d4a94a4",
-        "status" : "passed",
+        "name" : "Book a hotel room",
+        "uid" : "e1a19acc1386e7f",
+        "parentUid" : "05075704e89a0e0888861c49c914c796",
+        "status" : "failed",
         "time" : {
-          "start" : 1535467691759,
-          "stop" : 1535467736309,
-          "duration" : 44550
+          "start" : 1535551689080,
+          "stop" : 1535551737559,
+          "duration" : 48479
         },
         "flaky" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "18d74678eb25ce59abe50b100d4a94a4"
+      "uid" : "05075704e89a0e0888861c49c914c796"
     } ],
-    "uid" : "2a5be51859d2cbf35b662872d2b12a24"
+    "uid" : "332caa2d6b3f5196da9c448bfeb2e2ae"
+  }, {
+    "name" : "This feature is about logging into the user account",
+    "children" : [ {
+      "name" : "Successful login",
+      "children" : [ {
+        "name" : "Successful login",
+        "uid" : "ff24a87e6fcf883f",
+        "parentUid" : "d0d0d9900f04707453b96a0d39d75514",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535551742704,
+          "stop" : 1535551766577,
+          "duration" : 23873
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d0d0d9900f04707453b96a0d39d75514"
+    } ],
+    "uid" : "df4a7abb0b6d0e433c11c8bc4d0dbdcc"
+  }, {
+    "name" : "This feature is about creating a new account in the system",
+    "children" : [ {
+      "name" : "Successful sign-up",
+      "children" : [ {
+        "name" : "Successful sign-up",
+        "uid" : "6abc01258c479805",
+        "parentUid" : "e4e49f836878d1423100563023a8b9a4",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535551771602,
+          "stop" : 1535551786110,
+          "duration" : 14508
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "e4e49f836878d1423100563023a8b9a4"
+    }, {
+      "name" : "Unsuccessful sign-up",
+      "children" : [ {
+        "name" : "Unsuccessful sign-up",
+        "uid" : "eeedee6c4491d97a",
+        "parentUid" : "b3353992c6efb2a91f559c0dffa3303c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1535551791122,
+          "stop" : 1535551807011,
+          "duration" : 15889
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b3353992c6efb2a91f559c0dffa3303c"
+    } ],
+    "uid" : "457c0196ae0211d43e5c1b4b21dfe6c0"
   } ]
 }

@@ -14,11 +14,7 @@ public class HotelDetailsPageObject {
 
     private SelenideElement getBookNowJuniorButton(){
 
-            return $(By.xpath("//section[@id=\"ROOMS\"]" +
-                    "//descendant::button[@href='#details52']" +
-                    "//ancestor::div[@class=\"col-md-3 book_buttons hidden-xs hidden-sm go-right\"]" +
-                    "//following-sibling::div[@class='col-md-4 go-right']" +
-                    "//descendant::button"));
+            return $(By.xpath("//div[@id=\"availability52\"]//preceding-sibling::div//button[contains(text(), \"Book Now\")]"));
     }
 
     private SelenideElement getHotelDetailsHeader(){

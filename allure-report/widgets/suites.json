@@ -1,8 +1,30 @@
 {
-  "total" : 1,
+  "total" : 3,
   "items" : [ {
-    "uid" : "7b7a7e79e2933c46a1942129b7ed628b",
-    "name" : "A description",
+    "uid" : "4aba9cbac12da8950c58bd50b751fd2b",
+    "name" : "This feature is about booking a hotel",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "5cf0b578ac131bacc26177604690d73b",
+    "name" : "This feature is about creating a new account in the system",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "da30aa9bab49f502cb6fb022e2694406",
+    "name" : "This feature is about logging into the user account",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,

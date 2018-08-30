@@ -13,12 +13,12 @@ public class BookHotelsPageObject {
 
     private SelenideElement getEnterHotelNameButton() {
 
-        return $(By.xpath("//div[@id='s2id_autogen8']//descendant::input[@id='s2id_autogen9']"));
+        return $(By.xpath("//span[contains(text(), \"Search by Hotel\")]//parent::a//following-sibling::input"));
     }
 
     private SelenideElement getSingaporeHotelButton() {
 
-        return $(By.xpath("//div[contains (text(), 'Singapore')]"));
+        return $(By.xpath("//div[contains(text(),\"Hotels\")]//parent::li//li//div"));
     }
 
     private SelenideElement getCheckInButton() {
@@ -37,7 +37,7 @@ public class BookHotelsPageObject {
         return $("input[id='childInput']");
     }
     private SelenideElement getSearchHotelButton() {
-        return $(By.xpath("//form[@name = 'fCustomHotelSearch']/descendant::button[@type = 'submit']"));
+        return $(By.xpath("//div[@id=\"HOTELS\"]//button[contains(text(), \"Search\")]"));
     }
 
 
