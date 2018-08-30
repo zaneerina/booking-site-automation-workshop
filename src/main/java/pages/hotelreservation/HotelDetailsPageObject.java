@@ -71,6 +71,7 @@ public class HotelDetailsPageObject {
     }
 
     public String getChekinDateText(){
+
         return getCheckinDate().getValue();
     }
 
@@ -81,7 +82,7 @@ public class HotelDetailsPageObject {
 
     public String getAmountOfAdultsAsString(){
 
-        return getAmountOfAdults().getText();
+        return getAmountOfAdults().getValue();
     }
 
     public String getAmountOfChildrenAsString(){

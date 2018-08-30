@@ -1,7 +1,7 @@
 # new feature
 # Tags: optional
 
-Feature: This feature is about booking a hotel
+Feature: This feature is about booking a hotel room
 @TEST
   Scenario: Book a hotel room
     Given Landing page is opened
@@ -13,12 +13,12 @@ Feature: This feature is about booking a hotel
       And Landing page is opened
       And I select book Hotels button
       And I enter Rendezvous Hotels hotel
-      And The correct amount of hotels is found
+      And The hotel in Singapore is found
           #chech if only one Hotel is displayed
       And I select hotel located in Singapore
       And I select 01/09/2018 checkInDate
       And I select 09/09/2018 as Check out date
-      And I select 2 Adult and 2 Children
+      And I select 2 Adults and 2 Children
       And I select Search button
       And Hotel details page is opened
           # check if the correct page is displayed
